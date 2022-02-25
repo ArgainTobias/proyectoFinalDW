@@ -73,6 +73,12 @@
 
 .boton a {
   padding: 16px;
+  color: white;
+  text-decoration: none;
+}
+
+.boton button:hover {
+  background-color: #79939c;
 }
 
 button {
@@ -191,6 +197,22 @@ footer .texto__footer {
 
 footer .texto__footer p {
   color: black;
+}
+
+.container-fluid {
+  width: 40%;
+}
+
+header img {
+  height: 70%;
+  width: 70%;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+header img:hover {
+  height: 100%;
+  width: 100%;
 }
 
 a {

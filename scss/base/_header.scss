@@ -1,0 +1,15 @@
+.container-fluid {
+    width: 40%;
+}
+
+header {
+    img {
+        height: 70%;
+        width: 70%;
+        transition: all 1s
+    }
+    img:hover {
+        height: 100%;
+        width: 100%
+    }
+}
