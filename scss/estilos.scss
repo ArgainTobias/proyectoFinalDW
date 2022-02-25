@@ -1,0 +1,48 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+$fondo-links:rgb(148, 182, 194);
+@import'base/index';
+// @import'base/blog';
+@import'base/nosotros';
+@import'base/productos';
+@import'base/contacto';
+@import'base/footer';
+@import'base/header';
+a {
+    text-transform: capitalize;
+}
+
+body {
+    background-image: linear-gradient(to right, #141e30, #243b55);
+}
+
+main {
+    /* ft: 30px; */
+    padding-bottom: 20px;
+}
+
+h1,
+h2,
+h3 {
+    color: black;
+    // color: #d88014;
+    font-family: 'Times New Roman', serif;
+    padding: 12px;
+    text-transform: uppercase;
+}
+
+p {
+    font-family: 'Zilla Slab', serif;
+    padding: 15px;
+    padding-left: 18px;
+    padding-top: 5px;
+    color: white;
+}
+
+.body__blog main {
+    height: 70vh;
+}

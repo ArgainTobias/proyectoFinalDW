@@ -1,0 +1,33 @@
+$fondo-links:rgb(148, 182, 194);
+footer {
+    height: 240px;
+    text-align: center;
+    padding-top: 10px;
+    background-image: url(../imagenes/fondo-footer.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    a {
+        display: inline-block;
+        width: 33%;
+        //     border: 1px solid rgb(123, 150, 160);
+        //     background-color: $fondo-links;
+        //     border-radius: 20px;
+        // }
+        // a:hover {
+        //     background-color: rgb(121, 147, 156);
+        // }
+        // a:active {
+        //     background-color: rgb(107, 130, 138);
+    }
+    .texto__footer {
+        text-transform: uppercase;
+        font-weight: bold;
+        p {
+            color: black;
+        }
+    }
+    // a:link {
+    //     color: white;
+    // }
+}

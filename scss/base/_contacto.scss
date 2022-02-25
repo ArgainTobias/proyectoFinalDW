@@ -1,0 +1,29 @@
+/* CONTACTO.HMTL */
+
+.body__contacto {
+    background-image: url(../imagenes/lentes5.jpg);
+}
+
+label {
+    display: block;
+    /*queda todo el formulario derecho*/
+    font-family: 'Zilla Slab', serif;
+    font-weight: bold;
+}
+
+.enviar {
+    width: 60px;
+    background-color: $fondo-links;
+    color: white;
+    border: none;
+}
+
+.quiero {
+    display: inline-block;
+    font-weight: bold;
+    color: white;
+}
+
+form {
+    padding: 10px;
+}

@@ -1,0 +1,39 @@
+/* PRODUCTOS.HTML */
+
+.main__productos {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    div {
+        display: grid;
+        align-items: center;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.5rem;
+        margin: 20px;
+        img {
+            width: 95%;
+            height: 90%;
+            object-fit: cover;
+            transition: height 1s, width 1s;
+        }
+        img:hover {
+            height: 100%;
+            width: 100%;
+        }
+    }
+}
+
+table {
+    border: solid #435258;
+    // color: #d88014;
+    color: black;
+    margin: 10px;
+    padding: 5px;
+    th {
+        padding: 6px;
+        color: white;
+    }
+    td {
+        padding: 6px;
+        color: white;
+    }
+}
