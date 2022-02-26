@@ -199,10 +199,6 @@ footer .texto__footer p {
   color: black;
 }
 
-.container-fluid {
-  width: 40%;
-}
-
 header img {
   height: 70%;
   width: 70%;
@@ -216,7 +212,7 @@ header img:hover {
 }
 
 a {
-  text-transform: capitalize;
+  text-transform: uppercase;
 }
 
 body {
