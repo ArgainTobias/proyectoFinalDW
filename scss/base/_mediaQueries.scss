@@ -1,0 +1,33 @@
+// @media (max-width: 900px) {}
+@media (max-width: 768px) {
+    .main__index {
+        section {
+            background-image: url('../imagenes/lentes8.jpg');
+            h3 {
+                padding-left: 140px;
+            }
+        }
+    }
+}
+
+@media (max-width: 512px) {
+    .main__index {
+        section {
+            h3 {
+                padding-left: 0px;
+                font-size: 40px;
+            }
+        }
+        div {
+            height: 120px;
+        }
+    }
+    .body__blog {
+        main {
+            height: 90vh;
+        }
+    }
+    footer {
+        height: 220px;
+    }
+}
