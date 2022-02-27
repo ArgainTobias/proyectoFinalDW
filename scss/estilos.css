@@ -120,7 +120,7 @@ table td {
 }
 
 /* CONTACTO.HMTL */
-.body__contacto {
+.main__contacto {
   background-image: url(../imagenes/lentes5.jpg);
 }
 
@@ -201,6 +201,9 @@ header img:hover {
   .main__index section h3 {
     padding-left: 140px;
   }
+  .main__contacto {
+    background-image: url("../imagenes/lentes8.jpg");
+  }
 }
 
 @media (max-width: 512px) {
@@ -216,6 +219,10 @@ header img:hover {
   }
   footer {
     height: 220px;
+  }
+  .boton {
+    height: 40px;
+    width: 240px;
   }
 }
 

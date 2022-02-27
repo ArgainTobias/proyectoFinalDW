@@ -1,4 +1,3 @@
-// @media (max-width: 900px) {}
 @media (max-width: 768px) {
     .main__index {
         section {
@@ -7,6 +6,9 @@
                 padding-left: 140px;
             }
         }
+    }
+    .main__contacto {
+        background-image: url('../imagenes/lentes8.jpg');
     }
 }
 
@@ -29,5 +31,9 @@
     }
     footer {
         height: 220px;
+    }
+    .boton {
+        height: 40px;
+        width: 240px;
     }
 }
