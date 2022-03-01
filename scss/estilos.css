@@ -79,16 +79,26 @@ button {
 }
 
 .main__nosotros section img {
-  padding: 20px;
+  margin: 20px;
   height: 300px;
   width: 350px;
   -o-object-fit: cover;
      object-fit: cover;
+  border: solid 2px black;
 }
 
 .main__nosotros section p {
   font-size: 15px;
   text-align: center;
+}
+
+.main__nosotros section iframe {
+  margin: 20px;
+  height: 300px;
+  width: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: solid 2px black;
 }
 
 /* PRODUCTOS.HTML */
@@ -317,11 +327,12 @@ header img:hover {
 }
 
 .main__blog section img {
-  padding: 20px;
+  margin: 20px;
   height: 300px;
   width: 350px;
   -o-object-fit: cover;
      object-fit: cover;
+  border: solid 2px black;
 }
 
 .main__blog section p {

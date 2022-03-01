@@ -5,10 +5,11 @@
         align-items: center;
         grid-template-columns: 35% 65%;
         img {
-            padding: 20px;
+            margin: 20px;
             height: 300px;
             width: 350px;
             object-fit: cover;
+            border: solid 2px black
         }
         p {
             font-size: 15px;
