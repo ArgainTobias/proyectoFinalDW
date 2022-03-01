@@ -1,6 +1,5 @@
 $fondo-links:rgb(148, 182, 194);
 footer {
-    height: 240px;
     text-align: center;
     padding-top: 10px;
     background-image: url(../imagenes/fondo-footer.jpg);
@@ -12,6 +11,8 @@ footer {
         justify-content: space-around;
     }
     .texto__footer {
+        margin-top: 50px;
+        display: block;
         text-transform: uppercase;
         font-weight: bold;
         p {
