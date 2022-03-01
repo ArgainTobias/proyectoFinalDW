@@ -6,13 +6,13 @@
 
 $fondo-links:rgb(148, 182, 194);
 @import'base/index';
-// @import'base/blog';
 @import'base/nosotros';
 @import'base/productos';
 @import'base/contacto';
 @import'base/footer';
 @import'base/header';
 @import'base/mediaQueries';
+@import'base/blog';
 a {
     text-transform: uppercase;
 }
@@ -33,7 +33,9 @@ h3 {
     // color: #d88014;
     font-family: 'Times New Roman', serif;
     padding: 12px;
+    padding-bottom: 22px;
     text-transform: uppercase;
+    text-align: center;
 }
 
 p {
@@ -44,6 +46,9 @@ p {
     color: white;
 }
 
-.body__blog main {
-    height: 70vh;
+main {
+    h3 {
+        background-color: white;
+        padding-bottom: 12px;
+    }
 }

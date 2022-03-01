@@ -19,7 +19,7 @@
           align-items: center;
 }
 
-.main__index section h3 {
+.main__index section h2 {
   text-align: center;
   font-size: 50px;
   color: white;
@@ -68,14 +68,30 @@ button {
   border-radius: 60px;
 }
 
-/* PRODUCTOS.HTML */
-.main__productos {
+.main__nosotros section {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[1];
-      grid-template-columns: repeat(1, 1fr);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-columns: 35% 65%;
+      grid-template-columns: 35% 65%;
 }
 
+.main__nosotros section img {
+  padding: 20px;
+  height: 300px;
+  width: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.main__nosotros section p {
+  font-size: 15px;
+  text-align: center;
+}
+
+/* PRODUCTOS.HTML */
 .main__productos div {
   display: -ms-grid;
   display: grid;
@@ -89,12 +105,13 @@ button {
 }
 
 .main__productos div img {
-  width: 95%;
-  height: 90%;
+  width: 90%;
+  height: 85%;
   -o-object-fit: cover;
      object-fit: cover;
   -webkit-transition: height 1s, width 1s;
   transition: height 1s, width 1s;
+  border: solid 2px black;
 }
 
 .main__productos div img:hover {
@@ -204,6 +221,12 @@ header img:hover {
   .main__contacto {
     background-image: url("../imagenes/lentes8.jpg");
   }
+  .main__productos div {
+    -ms-grid-columns: (2fr)[2];
+        grid-template-columns: repeat(2, 2fr);
+    -ms-grid-rows: (2fr)[3];
+        grid-template-rows: repeat(3, 2fr);
+  }
 }
 
 @media (max-width: 512px) {
@@ -224,6 +247,39 @@ header img:hover {
     height: 40px;
     width: 240px;
   }
+  .main__productos div {
+    -ms-grid-columns: (2fr)[1];
+        grid-template-columns: repeat(1, 2fr);
+    -ms-grid-rows: (1fr)[6];
+        grid-template-rows: repeat(6, 1fr);
+  }
+}
+
+.blog__main {
+  height: 70vh;
+}
+
+.blog__main section {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-columns: 35% 65%;
+      grid-template-columns: 35% 65%;
+}
+
+.blog__main section img {
+  padding: 20px;
+  height: 300px;
+  width: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.blog__main section p {
+  font-size: 15px;
+  text-align: center;
 }
 
 a {
@@ -246,7 +302,9 @@ h3 {
   color: black;
   font-family: 'Times New Roman', serif;
   padding: 12px;
+  padding-bottom: 22px;
   text-transform: uppercase;
+  text-align: center;
 }
 
 p {
@@ -257,7 +315,8 @@ p {
   color: white;
 }
 
-.body__blog main {
-  height: 70vh;
+main h3 {
+  background-color: white;
+  padding-bottom: 12px;
 }
 /*# sourceMappingURL=estilos.css.map */

@@ -10,6 +10,12 @@
     .main__contacto {
         background-image: url('../imagenes/lentes8.jpg');
     }
+    .main__productos {
+        div {
+            grid-template-columns: repeat(2, 2fr);
+            grid-template-rows: repeat(3, 2fr);
+        }
+    }
 }
 
 @media (max-width: 512px) {
@@ -35,5 +41,11 @@
     .boton {
         height: 40px;
         width: 240px;
+    }
+    .main__productos {
+        div {
+            grid-template-columns: repeat(1, 2fr);
+            grid-template-rows: repeat(6, 1fr);
+        }
     }
 }

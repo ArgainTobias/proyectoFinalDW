@@ -18,3 +18,21 @@ button {
     width: 300px;
     border-radius: 60px;
 }
+
+.main__nosotros {
+    section {
+        display: grid;
+        align-items: center;
+        grid-template-columns: 35% 65%;
+        img {
+            padding: 20px;
+            height: 300px;
+            width: 350px;
+            object-fit: cover;
+        }
+        p {
+            font-size: 15px;
+            text-align: center;
+        }
+    }
+}
