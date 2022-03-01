@@ -211,6 +211,45 @@ header img:hover {
   width: 100%;
 }
 
+@media (max-width: 991.98px) {
+  .main__blog .gridAreas__blog {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: 'img-blog parrafo-blog';
+  }
+  .main__blog .gridAreas__blog img {
+    height: 100%;
+    width: 100%;
+  }
+  .main__nosotros .gridAreas1__nosotros {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: 'img1-nosotros parrafo1-nosotros';
+  }
+  .main__nosotros .gridAreas1__nosotros img {
+    height: 100%;
+    width: 100%;
+  }
+  .main__nosotros .gridAreas2__nosotros {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: 'img2-nosotros parrafo2-nosotros';
+  }
+  .main__nosotros .gridAreas2__nosotros img {
+    height: 100%;
+    width: 100%;
+  }
+  .main__nosotros .gridAreas3__nosotros {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: 'iframe-nosotros parrafo3-nosotros';
+  }
+  .main__nosotros .gridAreas3__nosotros img {
+    height: 100%;
+    width: 100%;
+  }
+}
+
 @media (max-width: 768px) {
   .main__index section {
     background-image: url("../imagenes/lentes8.jpg");
@@ -227,6 +266,21 @@ header img:hover {
     -ms-grid-rows: (2fr)[3];
         grid-template-rows: repeat(3, 2fr);
   }
+  .main__blog .gridAreas__blog img {
+    width: 100%;
+  }
+  .main__nosotros .gridAreas1__nosotros img {
+    height: 100%;
+    width: 100%;
+  }
+  .main__nosotros .gridAreas2__nosotros img {
+    height: 100%;
+    width: 100%;
+  }
+  .main__nosotros .gridAreas3__nosotros img {
+    height: 100%;
+    width: 100%;
+  }
 }
 
 @media (max-width: 512px) {
@@ -236,9 +290,6 @@ header img:hover {
   }
   .main__index div {
     height: 120px;
-  }
-  .body__blog main {
-    height: 90vh;
   }
   footer {
     height: 220px;
@@ -255,11 +306,7 @@ header img:hover {
   }
 }
 
-.blog__main {
-  height: 70vh;
-}
-
-.blog__main section {
+.main__blog section {
   display: -ms-grid;
   display: grid;
   -webkit-box-align: center;
@@ -269,7 +316,7 @@ header img:hover {
       grid-template-columns: 35% 65%;
 }
 
-.blog__main section img {
+.main__blog section img {
   padding: 20px;
   height: 300px;
   width: 350px;
@@ -277,7 +324,7 @@ header img:hover {
      object-fit: cover;
 }
 
-.blog__main section p {
+.main__blog section p {
   font-size: 15px;
   text-align: center;
 }
