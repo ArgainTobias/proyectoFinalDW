@@ -2,8 +2,8 @@
     .main__blog {
         .gridAreas__blog {
             grid-template-columns: repeat(1, 1fr);
-            grid-template-areas: 'img-blog
- parrafo-blog';
+            grid-template-areas: 'img-blog 
+            parrafo-blog';
  img {
                 height: 100%;
                 width: 80%;
@@ -14,7 +14,7 @@
         .gridAreas1__nosotros {
             grid-template-columns: repeat(1, 1fr);
             grid-template-areas: 'img1-nosotros
- parrafo1-nosotros';
+            parrafo1-nosotros';
  img {
                 height: 100%;
                 width: 80%;
@@ -22,8 +22,8 @@
         }
         .gridAreas2__nosotros {
             grid-template-columns: repeat(1, 1fr);
-            grid-template-areas: 'img2-nosotros
- parrafo2-nosotros';
+            grid-template-areas: 'img2-nosotros 
+            parrafo2-nosotros';
  img {
                 height: 100%;
                 width: 80%;
@@ -31,8 +31,9 @@
         }
         .gridAreas3__nosotros {
             grid-template-columns: repeat(1, 1fr);
-            grid-template-areas: 'iframe-nosotros
- parrafo3-nosotros';
+            grid-template-areas: 'iframe-nosotros 
+            masGrande-nosotros 
+            parrafo3-nosotros';
  iframe {
                 height: 100%;
                 width: 80%;

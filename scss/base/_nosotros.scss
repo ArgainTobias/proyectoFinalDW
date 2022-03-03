@@ -35,12 +35,22 @@ button {
             font-size: 15px;
             text-align: center;
         }
-        iframe {
+        .iframe-nosotros {
             margin: 20px;
             height: 300px;
             width: 350px;
             object-fit: cover;
             border: solid 2px black;
+        }
+        .masGrande-nosotros{
+            // text-decoration: none;
+            display: grid;
+            justify-content: center;
+            a{
+                text-decoration: none;
+                color: $fondo-links;
+            }
+            
         }
     }
 }

@@ -93,13 +93,26 @@ button {
   text-align: center;
 }
 
-.main__nosotros section iframe {
+.main__nosotros section .iframe-nosotros {
   margin: 20px;
   height: 300px;
   width: 350px;
   -o-object-fit: cover;
      object-fit: cover;
   border: solid 2px black;
+}
+
+.main__nosotros section .masGrande-nosotros {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main__nosotros section .masGrande-nosotros a {
+  text-decoration: none;
+  color: #94b6c2;
 }
 
 /* PRODUCTOS.HTML */
@@ -226,7 +239,7 @@ header img:hover {
   .main__blog .gridAreas__blog {
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
-        grid-template-areas: 'img-blog parrafo-blog';
+        grid-template-areas: 'img-blog  parrafo-blog';
   }
   .main__blog .gridAreas__blog img {
     height: 100%;
@@ -244,7 +257,7 @@ header img:hover {
   .main__nosotros .gridAreas2__nosotros {
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
-        grid-template-areas: 'img2-nosotros parrafo2-nosotros';
+        grid-template-areas: 'img2-nosotros  parrafo2-nosotros';
   }
   .main__nosotros .gridAreas2__nosotros img {
     height: 100%;
@@ -253,7 +266,7 @@ header img:hover {
   .main__nosotros .gridAreas3__nosotros {
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
-        grid-template-areas: 'iframe-nosotros parrafo3-nosotros';
+        grid-template-areas: 'iframe-nosotros  masGrande-nosotros  parrafo3-nosotros';
   }
   .main__nosotros .gridAreas3__nosotros iframe {
     height: 100%;
