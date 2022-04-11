@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500&display=swap" rel="stylesheet">
     <link rel="icon" href="../imagenes/faviconScalaOptical.ico">
-
+    <script defer src="../main.js"></script>
 </head>
 
 <body class="body__contacto">
@@ -49,17 +49,21 @@
     </header>
     <main class="main__contacto">
         <h3>¡Realizá tu consulta sin cargo!</h3>
-        <form action="" method="POST">
+        <form action="" method="POST" id="myform">
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" required>
+            <br>
+            <br>
             <label for="mail">Correo electrónico</label>
-            <input type="email" name="mail" required placeholder="correo@ejemplo.com">
+            <input type="email" name="mail" id="mail" required placeholder="correo@ejemplo.com">
             <br>
             <br>
             <label for="telefono">Teléfono (opcional)</label>
-            <input type="number" name="telefono">
+            <input type="number" name="telefono" id="telefono" required>
             <br>
             <br>
             <label for="edad">Edad</label>
-            <select name="edad" id="edad" required>
+            <select name="edad" id="edad">
                 <option value="seleccione">Seleccione su edad...</option>
                 <option value="menor">Menor a 18 años</option>
                 <option value="mayor">Entre 18 y 40 años</option>
