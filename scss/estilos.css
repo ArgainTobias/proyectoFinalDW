@@ -116,7 +116,7 @@ button {
 }
 
 /* PRODUCTOS.HTML */
-.main__productos div {
+.main__productos .div__productos {
   display: -ms-grid;
   display: grid;
   -webkit-box-align: center;
@@ -124,23 +124,28 @@ button {
           align-items: center;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
-  gap: 0.5rem;
-  margin: 20px;
+  gap: 2rem;
+  margin: 30px;
 }
 
-.main__productos div img {
-  width: 90%;
-  height: 85%;
+.main__productos .div__productos div {
+  border: solid 2px black;
+  margin: 10px;
+  text-align: center;
+}
+
+.main__productos .div__productos div h4 {
+  text-transform: uppercase;
+  padding: 5px;
+}
+
+.main__productos .div__productos img {
+  width: 100%;
+  height: 200px;
   -o-object-fit: cover;
      object-fit: cover;
   -webkit-transition: height 1s, width 1s;
   transition: height 1s, width 1s;
-  border: solid 2px black;
-}
-
-.main__productos div img:hover {
-  height: 100%;
-  width: 100%;
 }
 
 table {
@@ -191,35 +196,32 @@ form {
 
 footer {
   text-align: center;
-  padding-top: 10px;
+  padding-top: 20px;
   background-image: url(../imagenes/fondo-footer.jpg);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
 }
 
-footer section {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+footer .iconos__redes {
+  line-height: 30px;
+}
+
+footer .iconos__redes a img {
+  height: 60px;
+  margin: 15px;
 }
 
 footer .texto__footer {
   display: block;
   text-transform: uppercase;
   font-weight: bold;
+  line-height: 30px;
 }
 
 footer .texto__footer p {
+  padding-top: 20px;
   color: black;
 }
 
@@ -284,11 +286,9 @@ header img:hover {
   .main__contacto {
     background-image: url("../imagenes/lentes8.jpg");
   }
-  .main__productos div {
-    -ms-grid-columns: (2fr)[2];
-        grid-template-columns: repeat(2, 2fr);
-    -ms-grid-rows: (2fr)[3];
-        grid-template-rows: repeat(3, 2fr);
+  .main__productos .div__productos {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
   }
 }
 
@@ -302,16 +302,16 @@ header img:hover {
   }
   footer {
     height: 220px;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
   }
   .boton {
     height: 40px;
     width: 240px;
   }
-  .main__productos div {
+  .main__productos .div__productos {
     -ms-grid-columns: (2fr)[1];
         grid-template-columns: repeat(1, 2fr);
-    -ms-grid-rows: (1fr)[6];
-        grid-template-rows: repeat(6, 1fr);
   }
 }
 

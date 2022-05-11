@@ -1,20 +1,27 @@
 $fondo-links:rgb(148, 182, 194);
 footer {
     text-align: center;
-    padding-top: 10px;
+    padding-top: 20px;
     background-image: url(../imagenes/fondo-footer.jpg);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    section {
-        display: flex;
-        justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    .iconos__redes{
+        line-height: 30px;
+        a{
+            img{
+                height: 60px;
+                margin: 15px;
+            }
+        }
     }
+    
     .texto__footer {
         display: block;
         text-transform: uppercase;
         font-weight: bold;
+        line-height: 30px;
         p {
+            padding-top: 20px;
             color: black;
         }
     }

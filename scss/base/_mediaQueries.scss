@@ -55,9 +55,8 @@
         background-image: url('../imagenes/lentes8.jpg');
     }
     .main__productos {
-        div {
-            grid-template-columns: repeat(2, 2fr);
-            grid-template-rows: repeat(3, 2fr);
+        .div__productos {
+            grid-template-columns: repeat(1, 1fr);
         }
     }
 }
@@ -76,15 +75,15 @@
     }
     footer {
         height: 220px;
+        grid-template-columns: repeat(1,1fr);
     }
     .boton {
         height: 40px;
         width: 240px;
     }
     .main__productos {
-        div {
+        .div__productos {
             grid-template-columns: repeat(1, 2fr);
-            grid-template-rows: repeat(6, 1fr);
         }
     }
 }
