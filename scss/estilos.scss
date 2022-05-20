@@ -2,9 +2,12 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    font-family: 'Zilla Slab', serif;
+
 }
 
 $fondo-links:rgb(148, 182, 194);
+
 @import'base/index';
 @import'base/nosotros';
 @import'base/productos';
@@ -17,13 +20,16 @@ a {
     text-transform: uppercase;
 }
 
-body {
-    background-image: linear-gradient(to right, #141e30, #243b55);
+main {
+    padding: 20px 0;
+    min-height: 100vh;
 }
 
-main {
-    /* ft: 30px; */
-    padding-bottom: 20px;
+body {
+    // background-image: linear-gradient(to right, #141e30, #243b55);
+    background: #2980B9;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, rgba(255, 255, 255, 0.600), rgba(109, 212, 250, 0.600), rgba(59, 113, 135, 0.600));  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.600), rgba(109, 212, 250, 0.600), rgba(59, 113, 135, 0.600)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 h1,
@@ -43,13 +49,15 @@ p {
     padding: 15px;
     padding-left: 18px;
     padding-top: 5px;
-    color: white;
+    color: black;
 }
 
 main {
     h3 {
         background-color: white;
         padding-bottom: 12px;
+        border: solid 1px black;
+        margin: 0 10vw;
     }
 }
 

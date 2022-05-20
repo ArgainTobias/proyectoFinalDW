@@ -1,10 +1,14 @@
 @media (max-width: 991.98px) {
     .main__blog {
+        h3{
+            margin-bottom: 2rem;
+        }
         .gridAreas__blog {
             grid-template-columns: repeat(1, 1fr);
-            grid-template-areas: 'img-blog 
-            parrafo-blog';
- img {
+            // grid-template-areas: 'img-blog 
+            // parrafo-blog';
+            img {
+                margin-left: 3rem;
                 height: 100%;
                 width: 80%;
             }
@@ -15,7 +19,7 @@
             grid-template-columns: repeat(1, 1fr);
             grid-template-areas: 'img1-nosotros
             parrafo1-nosotros';
- img {
+            img {
                 height: 100%;
                 width: 80%;
             }
@@ -24,7 +28,7 @@
             grid-template-columns: repeat(1, 1fr);
             grid-template-areas: 'img2-nosotros 
             parrafo2-nosotros';
- img {
+            img {
                 height: 100%;
                 width: 80%;
             }
@@ -34,7 +38,7 @@
             grid-template-areas: 'iframe-nosotros 
             masGrande-nosotros 
             parrafo3-nosotros';
- iframe {
+            iframe {
                 height: 100%;
                 width: 80%;
             }
@@ -62,6 +66,14 @@
 }
 
 @media (max-width: 512px) {
+    .main__blog{
+        .gridAreas__blog{
+            img{
+                margin-left: auto;
+            }
+        }
+    }
+
     .main__index {
         section {
             h3 {
