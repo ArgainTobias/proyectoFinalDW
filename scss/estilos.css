@@ -6,6 +6,46 @@
   font-family: 'Zilla Slab', serif;
 }
 
+a {
+  text-transform: uppercase;
+}
+
+body {
+  background: #2980B9;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.6)), color-stop(rgba(109, 212, 250, 0.6)), to(rgba(59, 113, 135, 0.6)));
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgba(109, 212, 250, 0.6), rgba(59, 113, 135, 0.6));
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+h1,
+h2,
+h3 {
+  color: black;
+  font-family: 'Times New Roman', serif;
+  padding: 12px;
+  margin-bottom: 22px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+p {
+  margin: 15px;
+  color: black;
+}
+
+main {
+  padding: 20px 0;
+  min-height: 100vh;
+}
+
+main h3 {
+  background-color: white;
+  border: solid 1px black;
+  margin: 0 10vw;
+}
+
 /* INDEX.HTML */
 .header__index {
   border-bottom: solid 3px  black;
@@ -48,6 +88,9 @@
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-top: solid 1px black;
   border-bottom: solid 1px black;
 }
@@ -55,8 +98,8 @@
 .main__index div p {
   color: black;
   font-weight: bold;
-  padding-top: 25px;
   text-transform: uppercase;
+  padding: 0;
 }
 
 /* NOSOTROS.HTML */
@@ -97,7 +140,8 @@ button {
   width: 350px;
   -o-object-fit: cover;
      object-fit: cover;
-  border: solid 2px black;
+  border: solid 1px black;
+  border-radius: 5px;
 }
 
 .main__nosotros section p {
@@ -105,27 +149,31 @@ button {
   text-align: center;
 }
 
-.main__nosotros section .iframe-nosotros {
+.main__nosotros .gridAreas3__nosotros .iframe-nosotros {
   margin: 20px;
   height: 300px;
   width: 350px;
   -o-object-fit: cover;
      object-fit: cover;
-  border: solid 2px black;
+  border: solid 1px black;
 }
 
-.main__nosotros section .masGrande-nosotros {
+.main__nosotros .gridAreas3__nosotros .masGrande-nosotros {
   display: -ms-grid;
   display: grid;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 80%;
 }
 
-.main__nosotros section .masGrande-nosotros a {
+.main__nosotros .gridAreas3__nosotros .masGrande-nosotros a {
   text-decoration: none;
   color: black;
-  margin-right: 4.5rem;
+}
+
+.main__nosotros .gridAreas3__nosotros .parrafo3__nosotros {
+  grid-area: parrafo3;
 }
 
 /* PRODUCTOS.HTML */
@@ -142,23 +190,34 @@ button {
 }
 
 .main__productos .div__productos div {
+  background-color: white;
+  -webkit-box-shadow: 1px 1px 4px #000003;
+          box-shadow: 1px 1px 4px #000003;
   border: solid 2px black;
+  border-radius: 10px;
   margin: 10px;
   text-align: center;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.main__productos .div__productos div img {
+  height: 180px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .main__productos .div__productos div h4 {
   text-transform: uppercase;
-  padding: 5px;
 }
 
-.main__productos .div__productos img {
-  width: 100%;
-  height: 200px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -webkit-transition: height 1s, width 1s;
-  transition: height 1s, width 1s;
+.main__productos .div__productos div p {
+  font-size: 1.2rem;
+}
+
+.main__productos .div__productos div:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 table {
@@ -222,33 +281,36 @@ form {
 }
 
 footer {
-  text-align: center;
-  padding-top: 20px;
-  background-image: url(../imagenes/fondo-footer.jpg);
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-columns: 40% 60%;
+      grid-template-columns: 40% 60%;
+  text-align: center;
+  min-height: 6.5rem;
+  background-image: url(../imagenes/fondo-footer.jpg);
 }
 
 footer .iconos__redes {
-  line-height: 30px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  place-content: center;
 }
 
 footer .iconos__redes a img {
   height: 60px;
-  margin: 15px;
 }
 
 footer .texto__footer {
-  display: block;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
   text-transform: uppercase;
   font-weight: bold;
-  line-height: 30px;
 }
 
 footer .texto__footer p {
-  padding-top: 20px;
   color: black;
 }
 
@@ -281,36 +343,37 @@ header img:hover {
         grid-template-columns: repeat(1, 1fr);
   }
   .main__blog .gridAreas__blog img {
-    margin-left: 3rem;
+    margin-left: 10%;
     height: 100%;
     width: 80%;
   }
-  .main__nosotros .gridAreas1__nosotros {
+  .main__nosotros h3 {
+    margin-bottom: 2rem;
+  }
+  .main__nosotros .gridAreas1__nosotros, .main__nosotros .gridAreas2__nosotros {
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
-        grid-template-areas: 'img1-nosotros parrafo1-nosotros';
   }
-  .main__nosotros .gridAreas1__nosotros img {
-    height: 100%;
-    width: 80%;
-  }
-  .main__nosotros .gridAreas2__nosotros {
-    -ms-grid-columns: (1fr)[1];
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-areas: 'img2-nosotros  parrafo2-nosotros';
-  }
-  .main__nosotros .gridAreas2__nosotros img {
+  .main__nosotros .gridAreas1__nosotros img, .main__nosotros .gridAreas2__nosotros img {
+    margin-left: 10%;
     height: 100%;
     width: 80%;
   }
   .main__nosotros .gridAreas3__nosotros {
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
-        grid-template-areas: 'iframe-nosotros  masGrande-nosotros  parrafo3-nosotros';
   }
-  .main__nosotros .gridAreas3__nosotros iframe {
+  .main__nosotros .gridAreas3__nosotros .iframe-nosotros {
+    margin-left: 10%;
     height: 100%;
     width: 80%;
+    border: solid 1px black;
+  }
+  .main__nosotros .gridAreas3__nosotros .masGrande-nosotros {
+    margin: 1rem;
+  }
+  .main__nosotros .gridAreas3__nosotros .masGrande-nosotros a {
+    text-align: center;
   }
 }
 
@@ -335,14 +398,13 @@ header img:hover {
     margin-left: auto;
   }
   .main__index section h3 {
-    padding-left: 0px;
     font-size: 40px;
   }
   .main__index div {
-    height: 120px;
+    min-height: 120px;
   }
   footer {
-    height: 220px;
+    min-height: 220px;
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
   }
@@ -351,19 +413,19 @@ header img:hover {
     width: 240px;
   }
   .main__productos .div__productos {
-    -ms-grid-columns: (2fr)[1];
-        grid-template-columns: repeat(1, 2fr);
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
   }
 }
 
 .main__blog section {
   display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 35% 65%;
+      grid-template-columns: 35% 65%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-grid-columns: 35% 65%;
-      grid-template-columns: 35% 65%;
 }
 
 .main__blog section img {
@@ -372,55 +434,12 @@ header img:hover {
   width: 350px;
   -o-object-fit: cover;
      object-fit: cover;
-  border: solid 2px black;
+  border: solid 1px black;
+  border-radius: 5px;
 }
 
 .main__blog section p {
   font-size: 15px;
   text-align: center;
-}
-
-a {
-  text-transform: uppercase;
-}
-
-main {
-  padding: 20px 0;
-  min-height: 100vh;
-}
-
-body {
-  background: #2980B9;
-  /* fallback for old browsers */
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.6)), color-stop(rgba(109, 212, 250, 0.6)), to(rgba(59, 113, 135, 0.6)));
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgba(109, 212, 250, 0.6), rgba(59, 113, 135, 0.6));
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-h1,
-h2,
-h3 {
-  color: black;
-  font-family: 'Times New Roman', serif;
-  padding: 12px;
-  padding-bottom: 22px;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-p {
-  font-family: 'Zilla Slab', serif;
-  padding: 15px;
-  padding-left: 18px;
-  padding-top: 5px;
-  color: black;
-}
-
-main h3 {
-  background-color: white;
-  padding-bottom: 12px;
-  border: solid 1px black;
-  margin: 0 10vw;
 }
 /*# sourceMappingURL=estilos.css.map */

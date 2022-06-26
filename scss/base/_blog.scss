@@ -1,14 +1,16 @@
 .main__blog {
     section {
         display: grid;
-        align-items: center;
         grid-template-columns: 35% 65%;
+        align-items: center;
+        
         img {
             margin: 20px;
             height: 300px;
             width: 350px;
             object-fit: cover;
-            border: solid 2px black
+            border: solid 1px black;
+            border-radius:5px;
         }
         p {
             font-size: 15px;

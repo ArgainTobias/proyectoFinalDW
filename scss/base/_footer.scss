@@ -1,27 +1,27 @@
-$fondo-links:rgb(148, 182, 194);
 footer {
-    text-align: center;
-    padding-top: 20px;
-    background-image: url(../imagenes/fondo-footer.jpg);
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 40% 60%;
+    text-align: center;
+    min-height: 6.5rem;
+    background-image: url(../imagenes/fondo-footer.jpg);
     .iconos__redes{
-        line-height: 30px;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        place-content: center;
         a{
+            // width: 50%;
             img{
                 height: 60px;
-                margin: 15px;
             }
         }
     }
     
     .texto__footer {
-        display: block;
+        display: grid;
+        place-content: center;
         text-transform: uppercase;
         font-weight: bold;
-        line-height: 30px;
         p {
-            padding-top: 20px;
             color: black;
         }
     }

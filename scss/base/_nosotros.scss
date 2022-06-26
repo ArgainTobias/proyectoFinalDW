@@ -29,29 +29,43 @@ button {
             height: 300px;
             width: 350px;
             object-fit: cover;
-            border: solid 2px black;
+            border: solid 1px black;
+            border-radius: 5px;
         }
         p {
             font-size: 15px;
             text-align: center;
         }
+    }
+
+    .gridAreas3__nosotros{
+
         .iframe-nosotros {
             margin: 20px;
             height: 300px;
             width: 350px;
             object-fit: cover;
-            border: solid 2px black;
+            border: solid 1px black;
+            // grid-area: iframe;
         }
         .masGrande-nosotros{
-            // text-decoration: none;
             display: grid;
             justify-content: center;
+            width: 80%;
+            // grid-area: masGrande;
             a{
                 text-decoration: none;
                 color: black;
-                margin-right:4.5rem;
             }
             
         }
+
+        .parrafo3__nosotros{
+
+            grid-area: parrafo3;
+
+        }
+
     }
+
 }
