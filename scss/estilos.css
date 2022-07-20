@@ -60,6 +60,10 @@ main h3 {
       -ms-flex-pack: center;
           justify-content: center;
   background-image: url(../imagenes/lentes9.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.2)), to(rgba(255, 255, 255, 0.2))), url(../imagenes/lentes9.jpg);
+  background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url(../imagenes/lentes9.jpg);
+  background-size: cover;
+  background-position: center;
   width: 100%;
   height: 70vh;
   padding: 0;
@@ -113,15 +117,15 @@ main h3 {
   text-decoration: none;
 }
 
-.boton button:hover {
-  background-color: #79939c;
-}
-
-button {
+.boton button {
   background-color: #94b6c2;
   height: 50px;
-  width: 300px;
-  border-radius: 60px;
+  width: 250px;
+  border-radius: 10px;
+}
+
+.boton button:hover {
+  background-color: #79939c;
 }
 
 .main__nosotros section {
@@ -245,22 +249,27 @@ table td {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.6)), color-stop(rgba(109, 212, 250, 0.6)), to(rgba(59, 113, 135, 0.6))), url(../imagenes/lentes5.jpg);
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgba(109, 212, 250, 0.6), rgba(59, 113, 135, 0.6)), url(../imagenes/lentes5.jpg);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: cover;
+  background-position: center;
 }
 
 label {
   display: block;
-  /*queda todo el formulario derecho*/
   font-family: 'Zilla Slab', serif;
   font-weight: bold;
 }
 
 input {
   padding: 5px;
+  border-radius: 5px;
+  border: solid 1px black;
 }
 
 textarea {
   padding: 5px;
   font-size: 0.8rem;
+  border: solid 1px black;
+  border-radius: 5px;
 }
 
 .quiero {
@@ -323,15 +332,17 @@ header a {
 }
 
 header img {
-  height: 70%;
-  width: 70%;
+  height: 100px;
+  width: 120px;
+  -o-object-fit: cover;
+     object-fit: cover;
   -webkit-transition: all 1s;
   transition: all 1s;
 }
 
 header img:hover {
-  height: 100%;
-  width: 100%;
+  height: 120px;
+  width: 140px;
 }
 
 @media (max-width: 991.98px) {
@@ -371,6 +382,7 @@ header img:hover {
   }
   .main__nosotros .gridAreas3__nosotros .masGrande-nosotros {
     margin: 1rem;
+    width: 95%;
   }
   .main__nosotros .gridAreas3__nosotros .masGrande-nosotros a {
     text-align: center;
@@ -378,14 +390,8 @@ header img:hover {
 }
 
 @media (max-width: 768px) {
-  .main__index section {
-    background-image: url("../imagenes/lentes8.jpg");
-  }
-  .main__index section h3 {
-    padding-left: 140px;
-  }
-  .main__contacto {
-    background-image: url("../imagenes/lentes8.jpg");
+  .main__index .promo__index h2 {
+    font-size: 35px;
   }
   .main__productos .div__productos {
     -ms-grid-columns: (1fr)[1];
@@ -407,10 +413,6 @@ header img:hover {
     min-height: 220px;
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
-  }
-  .boton {
-    height: 40px;
-    width: 240px;
   }
   .main__productos .div__productos {
     -ms-grid-columns: (1fr)[1];

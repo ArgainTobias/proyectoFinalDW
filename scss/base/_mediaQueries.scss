@@ -43,6 +43,7 @@
             .masGrande-nosotros{
 
                 margin: 1rem;
+                width: 95%;
 
                 a{
                     
@@ -52,21 +53,21 @@
 
             }
         }
+
     }
 }
 
 @media (max-width: 768px) {
     .main__index {
-        section {
-            background-image: url('../imagenes/lentes8.jpg');
-            h3 {
-                padding-left: 140px;
+
+        .promo__index{
+            h2{
+                font-size: 35px;
             }
         }
+
     }
-    .main__contacto {
-        background-image: url('../imagenes/lentes8.jpg');
-    }
+
     .main__productos {
         .div__productos {
             grid-template-columns: repeat(1, 1fr);
@@ -98,13 +99,11 @@
         min-height: 220px;
         grid-template-columns: repeat(1,1fr);
     }
-    .boton {
-        height: 40px;
-        width: 240px;
-    }
+
     .main__productos {
         .div__productos {
             grid-template-columns: repeat(1, 1fr);
         }
     }
+
 }
